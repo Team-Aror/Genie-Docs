@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 20% 6%;
+    --foreground: 210 40% 96%;
+
+    --card: 220 18% 9%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 220 18% 9%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 158 64% 52%;
+    --primary-foreground: 220 20% 6%;
+
+    --secondary: 220 15% 14%;
+    --secondary-foreground: 210 40% 80%;
+
+    --muted: 220 15% 12%;
+    --muted-foreground: 215 20% 50%;
+
+    --accent: 263 70% 60%;
+    --accent-foreground: 210 40% 96%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 16%;
+    --input: 220 15% 14%;
+    --ring: 158 64% 52%;
+
+    --radius: 0.75rem;
+
+    --genie-green: 158 64% 52%;
+    --genie-purple: 263 70% 60%;
+    --genie-blue: 210 100% 60%;
+    --genie-glow: 158 64% 52%;
+
+    --sidebar-background: 220 20% 6%;
+    --sidebar-foreground: 210 40% 96%;
+    --sidebar-primary: 158 64% 52%;
+    --sidebar-primary-foreground: 220 20% 6%;
+    --sidebar-accent: 220 15% 14%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 220 15% 16%;
+    --sidebar-ring: 158 64% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+  }
+}
+
+@layer utilities {
+  .genie-gradient {
+    background: linear-gradient(135deg, hsl(var(--genie-green)) 0%, hsl(var(--genie-purple)) 100%);
+  }
+
+  .genie-text-gradient {
+    background: linear-gradient(135deg, hsl(var(--genie-green)), hsl(var(--genie-purple)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .genie-glow {
+    box-shadow: 0 0 30px hsl(var(--genie-green) / 0.2), 0 0 60px hsl(var(--genie-green) / 0.1);
+  }
+
+  .card-glow {
+    box-shadow: 0 4px 20px hsl(var(--genie-green) / 0.1);
+    border: 1px solid hsl(var(--genie-green) / 0.15);
+  }
+
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--genie-green) / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(var(--genie-green) / 0.6); }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--background)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--primary) / 0.5); }
+
+/* Textarea resize */
+textarea { resize: vertical; }
