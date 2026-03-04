@@ -30,7 +30,7 @@ const Index = () => {
             <Sparkles className="w-3 h-3" />
             Gemini AI Powered
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold mb-3" style={{ fontFamily: 'Syne, sans-serif' }}>
+          <h1 className="text-3xl sm:text-5xl font-extrabold mb-3 text-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>
             Your <span className="genie-text-gradient">Intelligent</span> Docs
             <br />Assistant
           </h1>
