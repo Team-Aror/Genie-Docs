@@ -50,7 +50,7 @@ npm run dev
 App runs on:
 
 ```
-http://localhost:5173
+http://localhost:8080
 ```
 
 ---
@@ -71,7 +71,7 @@ VITE_GEMINI_API_KEY=your_gemini_api_key_here
 
 Model Used:
 
-* Google Gemini API (`gemini-2.0-flash`)
+* Google Gemini API (`gemini-2.5-flash`)
 
 Features Powered by AI:
 
