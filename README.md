@@ -1,6 +1,3 @@
-Here is your updated **professional GitHub README.md** including team members and roles 👇
-
----
 
 ````markdown
 # 🚀 KnowGenie AI — Intelligent Document Assistant
