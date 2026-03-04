@@ -15,8 +15,8 @@ It provides:
 
 ## 🌐 Live Project
 
-- **Frontend URL:** _Add your deployed link here_
-- **Backend API:** _Add backend URL here_
+- **Frontend URL:** _genie-docs-six.vercel.app_
+ 
 
 ---
 
