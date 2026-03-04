@@ -15,8 +15,7 @@ It provides:
 
 ## 🌐 Live Project
 
-- **Frontend URL:** _genie-docs-six.vercel.app_
- 
+- **Frontend URL:** [https://genie-docs-six.vercel.app](https://genie-docs-six.vercel.app)
 
 ---
 
@@ -33,8 +32,11 @@ It provides:
 
 ```bash
 # Clone repository
-git clone <[YOUR_GIT_URL](https://github.com/Team-Aror/Genie-Docs)>
 
+You can clone this repository using the following command:
+
+```bash
+git clone https://github.com/Team-Aror/Genie-Docs.git
 # Navigate into folder
 cd <Genei-Docs>
 
@@ -124,12 +126,12 @@ src/
 
 | Name                           | Role                             |
 | ------------------------------ | -------------------------------- |
-| **Muhammad Irtaza Ali**        | Backend Developer                |
+| **Muhammad Irtaza Ali**        | DevOps / Deployment Engineer     |
 | **Saifullah**                  | Frontend Developer               |
 | **Alia**                       | UI/UX Designer                   |
 | **Shahriyar**                  | AI Integration Engineer          |
 | **Mazhar**                     | AI Integration Engineer          |
-| **(Add 6th Member Name Here)** | DevOps / Deployment Engineer     |
+| **Sanaullah**                  | Backend Developer and Architect  |
 
 ---
 
