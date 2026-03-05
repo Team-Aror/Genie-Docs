@@ -30,9 +30,10 @@ const Index = () => {
             <Sparkles className="w-3 h-3" />
             Gemini AI Powered
           </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold mb-3 text-foreground" style={{ fontFamily: 'Syne, sans-serif' }}>
-            Your <span className="genie-text-gradient">Intelligent</span> Docs
-            <br />Assistant
+          <h1
+            className="text-3xl sm:text-5xl lg:text-6xl font-extrabold mb-4 text-foreground leading-[1.1] tracking-tight max-w-3xl mx-auto"
+            style={{ fontFamily: "Sora, sans-serif" }} >
+            Your <span className="genie-text-gradient">Intelligent</span> Docs Assistant
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Summarize documents, generate FAQs, and chat with your content — all powered by Google Gemini AI.
