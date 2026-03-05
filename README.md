@@ -1,73 +1,164 @@
-# Welcome to your Lovable project
 
-## Project info
+````markdown
+# 🚀 KnowGenie AI — Intelligent Document Assistant
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+KnowGenie AI is an AI-powered document intelligence platform designed to simplify document understanding using advanced AI models.
 
-## How can I edit this code?
+It provides:
 
-There are several ways of editing your application.
+- 📄 Smart Document Summarization  
+- ❓ Automatic FAQ Generation  
+- 💬 AI Chat Assistant  
+- 🔎 (Upcoming) RAG-based Document Retrieval System  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🌐 Live Project
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend URL:** [https://genie-docs-six.vercel.app](https://genie-docs-six.vercel.app)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# 🛠 How to Run This Project Locally
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✅ Requirements
 
-Follow these steps:
+- Node.js (v18+ recommended)
+- npm
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📌 Setup Instructions
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clone repository
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+You can clone this repository using the following command:
+
+```bash
+git clone https://github.com/Team-Aror/Genie-Docs.git
+# Navigate into folder
+cd <Genei-Docs>
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
+````
+
+App runs on:
+
+```
+http://localhost:8080
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 🔐 Environment Variables
 
-**Use GitHub Codespaces**
+Create a `.env` file in the root directory:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+```
 
-## What technologies are used for this project?
+⚠️ Do not upload `.env` to GitHub.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# 🧠 AI Integration
 
-## How can I deploy this project?
+Model Used:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+* Google Gemini API (`gemini-2.5-flash`)
 
-## Can I connect a custom domain to my Lovable project?
+Features Powered by AI:
 
-Yes, you can!
+* Text Summarization
+* FAQ Generation
+* Conversational Chat Responses
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# 🏗 Tech Stack
+
+## 🌐 Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* shadcn-ui
+
+## 🔙 Backend (Production Recommended)
+
+* Node.js
+* Express.js
+* dotenv
+* CORS
+
+## 🔜 Future Enhancements
+
+* RAG Architecture
+* Vector Database (FAISS)
+* Document Upload + Embeddings
+* Authentication System
+* Deployment Optimization
+
+---
+
+# 📦 Project Structure
+
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── lib/
+ │     └── gemini.ts
+ ├── assets/
+ └── App.tsx
+```
+
+---
+
+# 👥 Team Members & Roles
+
+| Name                           | Role                             |
+| ------------------------------ | -------------------------------- |
+| **Muhammad Irtaza Ali**        | DevOps / Deployment Engineer     |
+| **Saifullah**                  | Frontend Developer               |
+| **Alia**                       | UI/UX Designer                   |
+| **Shahriyar**                  | AI Integration Engineer          |
+| **Mazhar**                     | AI Integration Engineer          |
+| **Sanaullah**                  | Backend Developer and Architect  |
+
+---
+
+# 🚀 Deployment
+
+
+* Netlify
+
+
+---
+
+# 📌 Roadmap
+
+* ✅ Summarizer
+* ✅ FAQ Generator
+* ✅ AI Chat
+* 🔜 RAG Document Retrieval
+* 🔜 Multi-user Authentication
+* 🔜 Admin Dashboard
+
+---
+
+# 📜 License
+
+This project is developed for academic and research purposes under the KnowGenie AI initiative.
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
+
