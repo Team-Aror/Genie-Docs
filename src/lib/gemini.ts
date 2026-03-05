@@ -1,12 +1,18 @@
 const GEMINI_KEYS = [
+  "AIzaSyCF89FYFK4KaDkHHjZNKa7LldlF4SFH1qQ",
+  "AIzaSyCn-hIeFjzWOxTBNGFbcP14QE-j7x1EuRM",
+  "AIzaSyC-hG5VQXqXhTdsY25sg9dczUDl2rzvRck",
+  "AIzaSyCVU9E4jHnCc19Kjb07JMXPaRvYHvfdHUw",
+  "AIzaSyCTB1dhywZsSFNvP9YRARe7UqQi1scaOes",
+  "AIzaSyC8Bs6BE6Qt8oaPnhQHtMVEzp9AdkXqKrY",
+  "AIzaSyCL2n41OzKpunMz18SpD3Uu9ZHGE2ahOVU",
   import.meta.env.GEMINI_API_KEY_1,
-  process.env.GEMINI_API_KEY_1,
-  process.env.GEMINI_API_KEY_2,
-  process.env.GEMINI_API_KEY_3,
-  process.env.GEMINI_API_KEY_4,
-  process.env.GEMINI_API_KEY_5,
-  process.env.GEMINI_API_KEY_6,
-  process.env.GEMINI_API_KEY_7
+  import.meta.env.GEMINI_API_KEY_2,
+  import.meta.env.GEMINI_API_KEY_3,
+  import.meta.env.GEMINI_API_KEY_4,
+  import.meta.env.GEMINI_API_KEY_5,
+  import.meta.env.GEMINI_API_KEY_6,
+  import.meta.env.GEMINI_API_KEY_7,
 ].filter(Boolean);
 
 const GEMINI_MODEL = "gemini-2.5-flash-lite";
